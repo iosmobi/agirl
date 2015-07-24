@@ -14,10 +14,37 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    [[NSFileManager defaultManager] removeItemAtPath:[RLMRealm defaultRealmPath] error:nil];
+    NSLog(@"%@",[RLMRealm defaultRealmPath]);
+    
+    [[APIManager shared] fetchNew:^(NSArray *news, NSError *error) {}];
+    [self copyDefaultDB];
+    
     return YES;
+}
+
+- (void)copyDefaultDB {
+    
+    
+    NSString *pathsToResources = [[NSBundle mainBundle] resourcePath];
+    
+    NSString *originalDatabasePath = [pathsToResources stringByAppendingPathComponent:@"default.realm"];
+    
+    NSString *dbPath = [RLMRealm defaultRealmPath];
+    
+    NSLog(@"%@",dbPath);
+    
+    [[NSFileManager defaultManager] removeItemAtPath:dbPath error:nil];
+    
+    if (![[NSFileManager defaultManager] isReadableFileAtPath: dbPath]) {
+        
+        if ([[NSFileManager defaultManager] copyItemAtPath: originalDatabasePath toPath: dbPath error: NULL] != YES)
+            
+            NSAssert2(0, @"Fail to copy database from %@ to %@", originalDatabasePath, dbPath);
+        
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
