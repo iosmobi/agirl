@@ -19,7 +19,7 @@
 //    [[NSFileManager defaultManager] removeItemAtPath:[RLMRealm defaultRealmPath] error:nil];
     NSLog(@"%@",[RLMRealm defaultRealmPath]);
     
-    [[APIManager shared] fetchNew:^(NSArray *news, NSError *error) {}];
+//    [[APIManager shared] fetchNew:^(NSArray *news, NSError *error) {}];
     [self copyDefaultDB];
     
     return YES;
@@ -33,9 +33,7 @@
     NSString *originalDatabasePath = [pathsToResources stringByAppendingPathComponent:@"default.realm"];
     
     NSString *dbPath = [RLMRealm defaultRealmPath];
-    
-    NSLog(@"%@",dbPath);
-    
+        
     [[NSFileManager defaultManager] removeItemAtPath:dbPath error:nil];
     
     if (![[NSFileManager defaultManager] isReadableFileAtPath: dbPath]) {

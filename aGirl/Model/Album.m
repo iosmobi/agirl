@@ -27,7 +27,7 @@
 
 //+ (NSArray *)ignoredProperties
 //{
-//    return @[];
+//    return @[@"local_path"];
 //}
 
 @end

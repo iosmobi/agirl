@@ -22,7 +22,7 @@
 		4C761FB51B5E9B9800969F28 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C761FB41B5E9B9800969F28 /* DetailViewController.m */; };
 		4C761FB81B5EA07400969F28 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C761FB71B5EA07400969F28 /* ModalViewController.m */; };
 		4CB1F3AC1B6086CA003B302D /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB1F3AB1B6086CA003B302D /* Country.m */; };
-		4CB1F3AE1B60D8FC003B302D /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 4CB1F3AD1B60D8FC003B302D /* default.realm */; };
+		4CBAD0B21B6344ED00515D1C /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 4CBAD0B11B6344ED00515D1C /* default.realm */; };
 		4CDBCCDB1B5F605E00E7BF93 /* Catalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCCDA1B5F605E00E7BF93 /* Catalog.m */; };
 		4CDBCCDE1B5F8E6B00E7BF93 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCCDD1B5F8E6B00E7BF93 /* MenuViewController.m */; };
 /* End PBXBuildFile section */
@@ -69,7 +69,7 @@
 		4C761FB71B5EA07400969F28 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		4CB1F3AA1B6086CA003B302D /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Country.h; path = Model/Country.h; sourceTree = "<group>"; };
 		4CB1F3AB1B6086CA003B302D /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Country.m; path = Model/Country.m; sourceTree = "<group>"; };
-		4CB1F3AD1B60D8FC003B302D /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		4CBAD0B11B6344ED00515D1C /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = SOURCE_ROOT; };
 		4CDBCCD91B5F605E00E7BF93 /* Catalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Catalog.h; path = Model/Catalog.h; sourceTree = "<group>"; };
 		4CDBCCDA1B5F605E00E7BF93 /* Catalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Catalog.m; path = Model/Catalog.m; sourceTree = "<group>"; };
 		4CDBCCDC1B5F8E6B00E7BF93 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 		4C6FF8AD1B5E2E900062F9CF /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				4CB1F3AD1B60D8FC003B302D /* default.realm */,
+				4CBAD0B11B6344ED00515D1C /* default.realm */,
 				4C761FB21B5E9A0800969F28 /* PrefixHeader.pch */,
 				4C6FF8AE1B5E2EAC0062F9CF /* Header.h */,
 			);
@@ -302,7 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C6FF8931B5E2E200062F9CF /* Main.storyboard in Resources */,
-				4CB1F3AE1B60D8FC003B302D /* default.realm in Resources */,
+				4CBAD0B21B6344ED00515D1C /* default.realm in Resources */,
 				4C6FF8981B5E2E200062F9CF /* LaunchScreen.xib in Resources */,
 				4C6FF8951B5E2E200062F9CF /* Images.xcassets in Resources */,
 			);

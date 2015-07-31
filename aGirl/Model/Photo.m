@@ -15,16 +15,17 @@
 }
 // Specify default values for properties
 
-//+ (NSDictionary *)defaultPropertyValues
-//{
-//    return @{};
-//}
++ (NSDictionary *)defaultPropertyValues
+{
+    return @{@"local_path": @""};
+}
 
 // Specify properties to ignore (Realm won't persist these)
-
+//
 //+ (NSArray *)ignoredProperties
 //{
-//    return @[];
+//    return @[@"local_path"];
+//
 //}
 
 @end

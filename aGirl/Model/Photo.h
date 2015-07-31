@@ -20,9 +20,11 @@
 @property NSString *status;
 @property NSString *thumb_url;
 @property NSString *title;
+@property NSString *local_path;
 
 @property NSString *created_at;
 @property NSString *updated_at;
+
 
 @end
 
