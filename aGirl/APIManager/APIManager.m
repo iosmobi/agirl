@@ -59,6 +59,7 @@
  *
  *  @param handler hàm complate
  */
+
 - (void)fetchNew:(void (^)(NSArray *news, NSError *error))handler
 {
 
