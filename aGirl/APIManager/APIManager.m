@@ -62,6 +62,7 @@
 
 - (void)fetchNew:(void (^)(NSArray *news, NSError *error))handler
 {
+    
     NSLog(@"%@",[RLMRealm defaultRealmPath]);
     [self GET:@"albums/test" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         
