@@ -1,5 +1,3 @@
 # agirl
 
-***
-
 First
